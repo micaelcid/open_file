@@ -31,7 +31,6 @@ OpenFile.open("/sdcard/example.txt");
             {".kml",    "application/vnd.google-earth.kml+xml"},
             {".gpx",    "application/gpx+xml"},
             {".csv",    "application/vnd.ms-excel"},
-            {".apk",    "application/vnd.android.package-archive"},
             {".asf",    "video/x-ms-asf"},
             {".avi",    "video/x-msvideo"},
             {".bin",    "application/octet-stream"},
@@ -98,6 +97,12 @@ OpenFile.open("/sdcard/example.txt");
             {"",        "*/*"}
 }
 
+```
+#### Not supported file types in android:
+```
+{
+     {".apk",    "application/vnd.android.package-archive"},
+}
 ```
 when Conflict with other plugins about FileProvider, add code below in your /android/app/src/main/AndroidManifest.xml
 ```xml

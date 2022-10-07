@@ -218,8 +218,6 @@ public class OpenFilePlugin implements MethodCallHandler
                 return "application/vnd.google-earth.kml+xml";
             case "gpx":
                 return "application/gpx+xml";
-            case "apk":
-                return TYPE_STRING_APK;
             case "asf":
                 return "video/x-ms-asf";
             case "avi":

@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
   var _openResult = 'Unknown';
 
   Future<void> openFile() async {
-    final filePath = '/storage/emulated/0/update.apk';
+    final filePath = '/storage/emulated/0/image.png';
     final result = await OpenFile.open(filePath);
 
     setState(() {
